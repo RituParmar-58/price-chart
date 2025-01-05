@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# React Chart Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple React-based dashboard that displays a financial summary and a line chart using `chart.js` and `react-chartjs-2`. It provides a user interface to visualize financial data over different durations, including the price fluctuations for the current week.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Header**: Displays the current price along with the percentage change.
+- **Summary Section**: A navigation bar with buttons for accessing different sections like Summary, Chart, Statistics, Analysis, and Settings.
+- **Duration Selector**: Buttons to select different time periods for viewing the data (1 day, 1 week, 1 month, 6 months, 1 year, and maximum).
+- **Chart**: A responsive line chart to visualize the data over a selected time period, showing price movements with an area chart.
 
-### `npm start`
+## Components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **ChartComponent**: This component renders the line chart with the price data for each day of the week. It uses `chart.js` to display the chart and `react-chartjs-2` for integration with React.
+- **Header**: Displays the current price and percentage change.
+- **Summary**: Provides a button navigation for different sections of the dashboard.
+- **Duration**: A set of buttons allowing the user to select a time duration for viewing the chart.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Libraries Used
 
-### `npm test`
+- `react`: JavaScript library for building user interfaces.
+- `chart.js`: A library for creating charts and visualizations.
+- `react-chartjs-2`: React wrapper for `chart.js`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup Instructions
+Make sure you have Node.js and npm installed on your system.
+1. **Clone the repository**:
 
-### `npm run build`
+   git clone [https://github.com/your-username/react-dashboard.git](https://github.com/RituParmar-58/price-chart.git)
+   
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm install
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Run the application:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The app will start on `http://localhost:3000`.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
